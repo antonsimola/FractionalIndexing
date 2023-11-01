@@ -1,5 +1,7 @@
 # Fractional Indexing
 
+![Nuget](https://img.shields.io/nuget/v/FractionalIndexing)
+
 This is based on [JS implementation by rocicorp](https://github.com/rocicorp/fractional-indexing)
 which in turn is based on [Implementing Fractional Indexing
 ](https://observablehq.com/@dgreensp/implementing-fractional-indexing) by [David Greenspan
