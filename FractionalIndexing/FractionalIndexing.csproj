@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <Version>1.0.0</Version>
         <TargetFramework>netstandard2.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -8,13 +9,16 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>FractionalIndexing</Title>
         <Authors>Anton Simola</Authors>
-        <Description>Library for generating short string keys for keeping objects in lists in order (drag-and-drop between two objects in a list etc.)
-It is a port of this https://github.com/rocicorp/fractional-indexing, which in turn is based on 
-https://observablehq.com/@dgreensp/implementing-fractional-indexing
-It is meant to be 100% same as the JS implementation</Description>
+        <Description>Generate short string keys for keeping objects in lists in order</Description>
         <PackageProjectUrl>https://github.com/antonsimola/FractionalIndexing</PackageProjectUrl>
         <RepositoryUrl>https://github.com/antonsimola/FractionalIndexing</RepositoryUrl>
         <PackageTags>fractional;indexing</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
     </PropertyGroup>
 
+    <ItemGroup>
+        <None Include=".\..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+    
 </Project>
