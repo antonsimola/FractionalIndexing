@@ -11,7 +11,7 @@ public static class OrderKeyGenerator
     /// <param name="a">the key before, or null if inserting as first one</param>
     /// <param name="b">the key after, or null if inserting as last one</param>
     /// <param name="digits">optionally choose your own list of characters to use in the key</param>
-    /// <returns>array of keys</returns>
+    /// <returns>key</returns>
     public static string GenerateKeyBetween(string? a, string? b, string digits = Base62Digits)
     {
         if (a != null) ValidateOrderKey(a, digits);
