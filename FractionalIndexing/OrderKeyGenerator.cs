@@ -127,7 +127,7 @@ public static class OrderKeyGenerator
             var n = 0;
             while ((n >= a.Length ? zero : a[n]) == b[n]) n++;
 
-            if (n > 0) return b.Substring(0, n) + Midpoint(a.Substring(n), b.Substring(n), digits);
+            if (n > 0) return b.Substring(0, n) + Midpoint(n >= a.Length ? string.Empty : a.Substring(n), b.Substring(n), digits);
         }
 
         // first digits (or lack of digit) are different
