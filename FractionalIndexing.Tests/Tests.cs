@@ -95,6 +95,7 @@ public class FractionalIndexingTests
         Test("a00", "a1", "invalid order key: a00");
         Test("0", "1", "invalid order key head: 0");
         Test("a1", "a0", "a1 >= a0");
+        Test("a0", "a00V", "a00G");
     }
 
     private void Test(string? a, string? b, string? exp)

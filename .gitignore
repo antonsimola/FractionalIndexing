@@ -4,3 +4,5 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 FractionalIndexing.sln.DotSettings.user
+
+.vs/
