@@ -1,10 +1,7 @@
 ﻿namespace FractionalIndexing;
 
 public static class OrderKeyGenerator
-{
-    private const string Base62Digits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-
-
+{   
     /// <summary>
     ///     Generate order key for an item that is about to be inserted between a and b
     /// </summary>
@@ -12,7 +9,7 @@ public static class OrderKeyGenerator
     /// <param name="b">the key after, or null if inserting as last one</param>
     /// <param name="digits">optionally choose your own list of characters to use in the key</param>
     /// <returns>key</returns>
-    public static string GenerateKeyBetween(string? a, string? b, string digits = Base62Digits)
+    public static string GenerateKeyBetween(string? a, string? b, string digits = Data.Base62Digits)
     {
         if (a != null) ValidateOrderKey(a, digits);
 
@@ -67,7 +64,7 @@ public static class OrderKeyGenerator
     /// <param name="n">number of keys generated</param>
     /// <param name="digits">optionally choose your own list of characters to use in the key</param>
     /// <returns>array of keys</returns>
-    public static IList<string> GenerateNKeysBetween(string? a, string? b, int n, string digits = Base62Digits)
+    public static IList<string> GenerateNKeysBetween(string? a, string? b, int n, string digits = Data.Base62Digits)
     {
         if (n == 0) return Array.Empty<string>();
 
@@ -109,7 +106,7 @@ public static class OrderKeyGenerator
         return res;
     }
 
-    private static string Midpoint(string? a, string? b, string digits = Base62Digits)
+    private static string Midpoint(string? a, string? b, string digits = Data.Base62Digits)
     {
         if (a == null) throw new ArgumentNullException(nameof(a));
 
